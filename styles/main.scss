@@ -1,0 +1,298 @@
+@import './base/mixins';
+@import './base/variables';
+@import './base/fonts';
+
+body {
+    font-family: $main-font;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background: {
+        image: $black-gradient, linear-gradient(rgba(255, 78, 80, 0.2) 0%, rgba(249, 212, 35, 0.2) 100%), url(../images/Header-image.jpg);
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+    padding: 46px 250px;
+    margin-bottom: 95px;
+    color: white;
+    h1 {
+        @include font (20px, 700);
+        margin-bottom: 153px;
+    }
+    h2 {
+        @include font (52px, 700);
+        margin-bottom: 29px;
+        text-align: center;
+    }
+    h5 {
+        @include font (24px, 300);
+        margin-bottom: 33px;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(247, 243, 242, 1);
+        text-align: center;
+    }
+    button {
+        width: 225px;
+        height: 40px;
+        @include font (14px, 700);
+    }
+}
+
+.header-button {
+    width: 90px;
+    height: 36px;
+    background: none;
+    border: none;
+    border-radius: 40px;
+    @include font (14px, 300);
+    &:hover {
+    border: 2px solid white;
+    }
+}
+
+section {
+    padding: 0px 250px;
+    margin-bottom: 95px;
+    h2 {
+        @include font (26px, bold);
+        color: rgba(68, 68, 68, 1);
+        text-align: center;
+        margin-bottom: 35px;
+    }
+}
+
+button {
+    border: 0px; 
+    background: $main-color;
+    border-radius: 40px;
+    color: white;
+}
+
+p {
+    @include font (14px, 300);
+    font-family: 'Roboto', sans-serif;
+    line-height: 14px;
+}
+
+h3 {
+    @include font (24px, 700);
+    color: white;
+}
+
+.step-block {
+    padding: 25px 21px;
+    height: 400px;
+    flex-direction: column;
+    background: {
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    border-radius: 4px;
+    button {
+        width: 70px;
+        height: 20px;
+        text-transform: uppercase;
+        @include font (10px, 300);
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 0;
+        color: rgba(227, 227, 227, 1);
+    }
+}
+
+.step1-background {
+    background-image: $grey-gradient, url(../images/Step1.jpg);
+}
+
+.step2-background {
+    background-image: $grey-gradient, url(../images/Step2.jpg);
+}
+
+.step3-background {
+    background-image: $grey-gradient, url(../images/Step3.jpg);
+}
+
+.person-card {
+    text-align: center;
+    margin-bottom: 35px;
+    img {
+        border-radius: 50%;
+    }
+    h4 {
+        @include font (14px, 700);
+        margin-bottom: 12px;
+    }
+    p {
+        color: rgba(102, 102, 102, 1);
+    }
+}
+
+.person-card-image {
+    margin: 0px auto;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.person-card-icon {
+    width: 32px;
+    height: 32px;
+    border: 3.5px solid white;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.icon1 {
+    background: {
+        image: url(../images/Icon1.png);
+        color: rgba(255, 78, 80, 1);
+    }
+}
+
+.icon2 {
+    background: {
+        image: url(../images/Icon2.png);
+        color: rgba(25, 212, 202, 1);
+    }
+}
+
+.icon3 {
+    background: {
+        image: url(../images/Icon3.png);
+        color: rgba(255, 167, 16, 1);
+    }
+}
+
+.icon4 {
+    background: {
+        image: url(../images/Icon4.png);
+        color: rgba(102, 125, 243, 1);
+    }
+}
+
+.partners-button {
+    width: 180px;
+    height: 40px;
+    background: white;
+    border: 2px solid $main-color;
+    @include font (14px, bold);
+    color: $main-color;
+}
+
+.activity-block {
+    height: 310px;
+    padding: 10px;
+    background: {
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.activity1-background {
+    background-image: $black-gradient, url(../images/Activity1.jpg);
+}
+
+.activity2-background {
+    background-image: $black-gradient, url(../images/Activity2.jpg);
+}
+
+.activity3-background {
+    background-image: $black-gradient, url(../images/Activity3.jpg);
+}
+
+.activity4-background {
+    background-image: $black-gradient, url(../images/Activity4.jpg);
+}
+
+.activity5-background {
+    background-image: $black-gradient, url(../images/Activity5.jpg);
+}
+
+.activity6-background {
+    background-image: $black-gradient, url(../images/Activity6.jpg);
+}
+
+.activity7-background {
+    background-image: $black-gradient, url(../images/Activity7.jpg);
+    background-position: left;
+}
+
+.interests {
+    h5 {
+        margin-top: 8px;
+        margin-bottom: 25px;
+        @include font (18px, 300);
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: rgba(102, 102, 102, 1);
+    }
+    input[type=text] {
+        width: 299px;
+        height: 40px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        border: 1px solid #D4D4D4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        padding-left: 15px;
+        margin-right: 10px;
+        font-family: 'Roboto', sans-serif;
+        @include font (14px, 300);
+        color: rgba(153, 153, 153, 1);
+    }
+    button{
+        width: 172px;
+        height: 40px;
+        @include font (14px, 700);
+    }
+}
+
+footer {
+    border-top: 2px solid $main-color;
+    padding: 36px 250px;
+    h4 {
+        @include font (16px, 400);
+        color: $main-color;
+    }
+    h5 {
+        @include font (15px, 700);
+        color: rgba(68, 68, 68, 1);
+        margin-bottom: 15px;
+    }
+    p {
+       color:  rgba(153, 153, 153, 1);
+       margin-bottom: 10px;
+    }
+    h6 {
+        @include font (10px, 700);
+        color: rgba(204, 204, 204, 1);
+        letter-spacing: 1px;
+    }
+    img {
+        width: 110px;
+        height: 24px;
+    }
+}
+
+@import 'media-screen.scss';

@@ -1,0 +1,89 @@
+@media screen and (max-width: 1199px) {
+    section {
+        padding: 0px 10px;
+    }
+    footer {
+        padding: 36px 38px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        padding: 46px 48px;
+    }
+    .step-block {
+        padding: 20px 16px;
+        h3 {
+            line-height: 15px;
+        }
+    }
+    .partners {
+        padding: 0px 138px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .partners {
+        padding: 0px 32px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        margin-bottom: 35px;
+        height: 540px;
+        padding: 20px;
+        h1{
+            margin-bottom: 27px;
+        }
+        button {
+            margin-bottom: 97px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 6px;
+        }
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        button {
+            width: 90%;
+        }
+    }
+    section {
+        margin-bottom: 35px;
+    }
+    .step-block {
+        height: 240px;
+        margin-bottom: 10px;
+    }
+    .activity-block {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .partners-button {
+        width: 100%;
+    }
+    .interests {
+        h2 {
+            margin-bottom: 15px;
+        }
+        h5 {
+            margin: 0px 0px 9px 0px;
+        }
+        input[type=text] {
+            width: 100%;
+            margin: 0 0 5px 0;
+        }
+        button {
+            width: 100%;
+        }
+    }
+    footer {
+        padding: 20px 50px;
+        p{
+            margin-right: 10px;
+        }
+    }
+}
