@@ -16,7 +16,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 46px 250px;
-  margin-bottom: 95px;
+  margin-bottom: 90px;
   color: white;
 }
 
@@ -65,7 +65,7 @@ header button {
 
 section {
   padding: 0px 250px;
-  margin-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 section h2 {
@@ -91,13 +91,13 @@ p {
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
   color: white;
 }
 
 .step-block {
-  padding: 25px 21px;
+  padding: 20px 25px;
   height: 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -116,7 +116,7 @@ h3 {
   font-size: 10px;
   font-weight: 300;
   letter-spacing: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .step-block h3 {
@@ -145,7 +145,7 @@ h3 {
 
 .person-card {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 }
 
 .person-card img {
@@ -155,7 +155,7 @@ h3 {
 .person-card h4 {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 28px;
 }
 
 .person-card p {
@@ -171,15 +171,15 @@ h3 {
 }
 
 .person-card-icon {
-  width: 32px;
-  height: 32px;
-  border: 3.5px solid white;
+  width: 40px;
+  height: 40px;
+  border: 4px solid white;
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 5px 5px;
+  background-position: 8px 8px;
   position: absolute;
-  bottom: 0;
-  right: 0px;
+  bottom: -6px;
+  right: -6px;
 }
 
 .icon1 {
@@ -231,6 +231,10 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.row {
+  --bs-gutter-x: 1rem;
 }
 
 .activity1-background {
